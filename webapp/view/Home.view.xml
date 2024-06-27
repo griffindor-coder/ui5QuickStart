@@ -1,0 +1,59 @@
+<mvc:View controllerName="sample.Quickstart.controller.homeController"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <App id="app">
+        <Page title="{i18n>homePageTitle}">
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button id="FetchDetailsButton" icon="sap-icon://add" type="Accept"
+                    press="onAddDetailsButton" />
+                <Button icon="sap-icon://edit" type="Ghost" press="onHandleEdit"
+                    visible="true" />
+                <Button icon="sap-icon://delete" type="Reject" press="empDelete"
+                    visible="true" />
+            </Toolbar>
+            <Table id="idHomeTable"
+                items="{employeeData>/data}"
+                sticky="ColumnHeaders"
+                noDataText="No Data found"
+                mode="SingleSelect">
+                <columns>
+                    <Column hAlign="Center">
+                        <Label text="{i18n>empID}" design="Bold" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Label text="{i18n>empName}" design="Bold" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Label text="{i18n>jobID}" design="Bold" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Label text="{i18n>totalExp}" design="Bold" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Label text="{i18n>designation}" design="Bold" />
+                    </Column>
+                </columns>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{employeeData>/empID}"></Text>
+                        <Text text="{employeeData>/empName}"></Text>
+                        <Text text="{employeeData>/jobID}"></Text>
+                        <Text text="{employeeData>/totalExp}"></Text>
+                        <Text text="{employeeData>/designation=}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </Table>
+            <footer>
+                <Bar>
+                    <contentRight>
+                        <Button icon="sap-icon://business-objects-experience"
+                            type="Emphasized"
+                            press="onClickAnalytics" />
+                    </contentRight>
+                </Bar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>

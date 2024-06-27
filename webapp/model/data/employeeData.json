@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "empID": "717136",
+            "empName": "Abdul",
+            "jobID": 5,
+            "totalExp": 8,
+            "designation": "Consultant"
+        },
+        {
+            "empID": "717909",
+            "empName": "Archisman",
+            "jobID": 4,
+            "totalExp": 10,
+            "designation": "Senior Consultant"
+        },
+        {
+            "empID": "71777",
+            "empName": "Elton",
+            "jobID": 4,
+            "totalExp": 10,
+            "designation": "Senior Contractor"
+        },
+        {
+            "empID": "621345",
+            "empName": "Dmitry",
+            "jobID": 3,
+            "totalExp": 15,
+            "designation": "Senior Contractor"
+        }
+    ]
+}
