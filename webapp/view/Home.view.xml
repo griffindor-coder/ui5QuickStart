@@ -37,11 +37,11 @@
                 </columns>
                 <ColumnListItem>
                     <cells>
-                        <Text text="{employeeData>/empID}"></Text>
-                        <Text text="{employeeData>/empName}"></Text>
-                        <Text text="{employeeData>/jobID}"></Text>
-                        <Text text="{employeeData>/totalExp}"></Text>
-                        <Text text="{employeeData>/designation=}"></Text>
+                        <Text text="{employeeData>empID}"></Text>
+                        <Text text="{employeeData>empName}" />
+                        <Text text="{employeeData>jobID}"></Text>
+                        <Text text="{employeeData>totalExp}"></Text>
+                        <Text text="{employeeData>designation}"></Text>
                     </cells>
                 </ColumnListItem>
             </Table>
